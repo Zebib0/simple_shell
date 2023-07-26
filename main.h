@@ -24,13 +24,13 @@ typedef struct list
 {
 	char *command;
 	int (*fun)(void);
-}list;
+} list;
 extern char **environ;
 int execute(char **tokens);
 char *handle_path(char *line);
 void execu(char **tokens);
 char *read_cmd(FILE *fp);
-void print_prompt();
+void print_prompt(void);
 char *_getenv(const char *envt, char **environ);
 char **parse_command(char *line);
 char *read_input(char *command);
