@@ -30,7 +30,7 @@ int execute(char **tokens);
 char *handle_path(char *line);
 void execu(char **tokens);
 char *read_cmd(FILE *fp);
-void print_prompt(void);
+ void print_prompt(struct stat buffer, int fd);
 char *_getenv(const char *envt, char **environ);
 char **parse_command(char *line);
 char *read_input(char *command);

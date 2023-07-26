@@ -8,10 +8,11 @@ int main(void)
 	char *line = NULL;
 	char **tokens;
 	int status;
+	struct stat buffer;
 
 	while (1)
 	{
-		print_prompt();
+		print_prompt(buffer, STDIN_FILENO);
 		line = read_cmd(stdin);
 		if (!line)
 		{
