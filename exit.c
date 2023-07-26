@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * exit - exit the shell
+ * hsh_exit - exit the shell
  * Return: -1
  */
 int hsh_exit(void)
