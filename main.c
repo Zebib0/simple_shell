@@ -28,7 +28,6 @@ int main(void)
 			free(line);
 		}
 		if (status == 0){
-			continue;
 			execu(tokens);
 		}
 		if (status == -1)
