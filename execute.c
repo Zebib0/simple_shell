@@ -24,7 +24,7 @@ void execu(char **tokens)
 			cpy_cmd = handle_path(cmd_in);
 			val = execve(cpy_cmd, tokens, envp);
 			if (val == -1)
-				perror("hsh: Error");
+				perror("hsh");
 		}
 	}
 	else

@@ -28,6 +28,7 @@ int main(void)
 			free(line);
 		}
 		if (status == 0)
+			continue;
 			execu(tokens);
 		if (status == -1)
 			_exit(EXIT_SUCCESS);
