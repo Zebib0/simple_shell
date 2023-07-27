@@ -12,7 +12,7 @@ char *read_cmd(FILE *fp)
 	size_t length = 0;
 
 	byte_read = getline(&line, &length, fp);
-	if (byte_read == EOF)
+	if (byte_read == -1)
 	{
 		free(line);
 		exit(EXIT_SUCCESS);
