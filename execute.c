@@ -32,3 +32,27 @@ void execu(char **tokens)
 		wait(&status);
 	}
 }
+/*
+int add_process(char *path, char **token)
+{
+pid_t pid;
+int pstatus, exe_status;
+char **envp = environ;
+
+pid = fork();
+if (pid == -1)
+{
+	perror("hsh: Error while forking");
+	exit(EXIT_FAILURE);
+}
+if (pid == 0)
+{
+	exe_status = execve(path, tokens, envp);
+	if (exe_status == -1)
+		return (-1);
+}
+else
+	wait(&pstatus);
+
+	return (0);
+	}*/
