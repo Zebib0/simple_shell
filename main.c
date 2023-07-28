@@ -7,7 +7,7 @@ int main(void)
 {
 	char *line = NULL;
 	char **tokens;
-	/*int status;*/
+	int status;
 	struct stat buffer;
 
 	while (1)
@@ -21,18 +21,17 @@ int main(void)
 		tokens = parse_command(line);
 		if (tokens[0] == NULL)
 			continue;
-		/*status = execute(tokens);
+		status = execute(tokens);
 		if (status == 0 && status == -1)
 		{
 			free(tokens);
 			free(line);
 		}
 		if (status == 0){
-			continue;
+			execu(tokens);
 		}
 		if (status == -1)
-			_exit(EXIT_SUCCESS);*/
-		execu(tokens);
+			_exit(EXIT_SUCCESS);
 		free(tokens);
 		free(line);
 	}
