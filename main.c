@@ -27,13 +27,13 @@ int main(void)
 			free(tokens);
 			free(line);
 		}
-		if (status == 0){
-			execu(tokens);
-		}
-		if (status == -1)
-			_exit(EXIT_SUCCESS);
-		free(tokens);
-		free(line);
+		if (status == 0)
+                        execu(tokens);
+                if (status == -1)
+                        _exit(EXIT_SUCCESS);
+                free(tokens);
+                free(line);
 	}
 	return (0);
 }
+
