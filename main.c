@@ -20,6 +20,8 @@ int main(void)
 			exit(EXIT_SUCCESS);
 		}
 		tokens = parse_command(line);
+		if (strcmp(tokens[0], "exit") == 0)
+			hsh_exit();
 		if (tokens[0] == NULL)
 			continue;
 		status = execute(tokens);

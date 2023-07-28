@@ -35,6 +35,7 @@ void print_prompt(struct stat buffer, int fd);
 char *_getenv(const char *envt, char **environ);
 char **parse_command(char *line);
 char *read_input(char *command);
+char **handle_separation(char *line);
 ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int cmp_string(const char *env, const char *envt);
