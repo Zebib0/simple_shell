@@ -29,6 +29,7 @@ extern char **environ;
 int execute(char **tokens);
 char *handle_path(char *line);
 void execu(char **tokens);
+char *handle_comment(char *input);
 char *read_cmd(FILE *fp);
 void print_prompt(struct stat buffer, int fd);
 char *_getenv(const char *envt, char **environ);

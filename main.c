@@ -14,6 +14,7 @@ int main(void)
 	{
 		print_prompt(buffer, STDIN_FILENO);
 		line = read_cmd(stdin);
+		line = handle_comment(line);
 		if (!line)
 		{
 			exit(EXIT_SUCCESS);
