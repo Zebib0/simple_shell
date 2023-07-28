@@ -16,6 +16,7 @@ char *read_cmd(FILE *fp)
 	{
 		free(line);
 		exit(EXIT_SUCCESS);
+		return (NULL);
 	}
 	return (line);
 }
