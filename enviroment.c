@@ -37,6 +37,7 @@ char *handle_path(char *line)
 			}
 		}
 		free(env_cpy);
+		free(path);
 		if (stat(line, &buffer) == 0)
 		{
 			return (line);

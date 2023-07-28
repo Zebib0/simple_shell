@@ -22,7 +22,7 @@ int main(void)
 		if (tokens[0] == NULL)
 			continue;
 		status = execute(tokens);
-		if (status == 0 && status == -1)
+		if (status == 0 && status == -1 && status == 1)
 		{
 			free(tokens);
 			free(line);
