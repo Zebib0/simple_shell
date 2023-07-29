@@ -11,7 +11,7 @@
 #include<sys/types.h>
 #include<sys/wait.h>
 
-#define DELIM " \t\n\r"
+#define DELIM " \t\n\r;&"
 #define BUFFER_SIZE 1024
 #define BUF_size 60
 /**
