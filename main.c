@@ -21,7 +21,7 @@ int main(void)
 		}
 		tokens = parse_command(line);
 		if (strcmp(tokens[0], "exit") == 0)
-			exit(0);
+			return (0);
 		if (tokens[0] == NULL)
 			continue;
 		status = execute(tokens);
