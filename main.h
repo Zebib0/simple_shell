@@ -39,6 +39,7 @@ char **handle_separation(char *line);
 ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int cmp_string(const char *env, const char *envt);
+void file_read(char *file, char **args);
 int hsh_env(void);
 int hsh_exit(void);
 #endif
